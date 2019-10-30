@@ -6,6 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+User.create(email: 'eyeris@tpg.com.au', password_digest: BCrypt::Password.create('1234'))
+User.create(email: 'hello@hello.com', password_digest: BCrypt::Password.create('1234'))
+User.create(email: 'bye@bye.com', password_digest: BCrypt::Password.create('1234'))
+
 
 Question.create(question_number: 'what were you grateful for?')
 Question.create(question_number: 'who made you feel grateful?')
