@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
   
+  get 'sessions/new'
   root 'pages#index'
 
   get 'journal' => 'pages#journal'
+
+  get 'signup', to: 'users#new', as: 'signup'
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+  resources :users
+  resources :sessions
 
 end
