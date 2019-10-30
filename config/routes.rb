@@ -4,8 +4,4 @@ Rails.application.routes.draw do
 
   get 'journal' => 'pages#journal'
 
-  get 'submitted_answers' => 'posts#submitted_answers'
-
-  resources :posts
-
 end
