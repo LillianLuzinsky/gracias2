@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/journal', notice: "login!"
     else
-      flash.now.alert = "Email or password is invalid"
+      flash.now.alert = "sorry, wrong email or password"
       render "new"
     end
   end
