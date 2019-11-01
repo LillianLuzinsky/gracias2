@@ -16,7 +16,7 @@ class JournalEntriesController < ApplicationController
     
     end
 
-    def new
+    def history
 
     end
 

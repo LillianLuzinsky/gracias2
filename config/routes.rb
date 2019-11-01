@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root :to => 'pages#index'
 
   get '/journal' => 'journal_entries#journal'
-  get '/journal/new' => 'journal_entries#new'
+  get '/journal/history' => 'journal_entries#history'
 
   get '/signup', to: 'users#new', as: 'signup'
   get '/login', to: 'sessions#new', as: 'login'

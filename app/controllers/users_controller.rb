@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(form_params)
     if @user.save
       session[:user_id] = @user.id
-      redirect_to '/journal/new', notice: "Thank you for signing up!"
+      redirect_to '/journal', notice: "Thank you for signing up!"
     else
       flash.now.alert = "sorry, wrong email or password"
       render "new"

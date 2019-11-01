@@ -2,7 +2,9 @@
     <h1>journal</h1>
 </div>
 
-<p>this is your where you enter your answers</p>
+<div id="click-here">
+    <p>to view your previous posts, <a href= '/journal/history' >click here</a></p>
+</div>
 
 <%= form_for :journal_entries, url: 'journal' do |f| %>
 
@@ -28,7 +30,3 @@
 </p>
   
 <% end %>
-
-<div id="click-here">
-    <p>to view your previous posts, <a href= '/journal/new' >click here</a></p>
-</div>
