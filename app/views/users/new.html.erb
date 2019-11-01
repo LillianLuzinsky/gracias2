@@ -6,7 +6,6 @@
  <%= form_for @user do |f| %>
     <% if @user.errors.any? %>
       <div class="error_messages">
-        <h2>Form is invalid</h2>
         <ul>
           <% @user.errors.full_messages.each do |message| %>
             <li><%= message %></li>
@@ -21,23 +20,12 @@
         <%= f.text_field :email, placeholder: "email" %>
       </div>
       <div class="field">
-        <%= f.label :password %><br />
-        <%= f.password_field :password %>
+        <%= f.password_field :password, placeholder: "password" %>
       </div>
       <div class="field">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation %>
+        <%= f.password_field :password_confirmation, placeholder: "password confirmation" %>
       </div>
-      <div class="actions"><%= f.submit "Sign Up" %></div>
+      <div class="actions"><%= f.submit "sign up" %></div>
     <% end %>
   </div>
 </div>
-
-<!--
-<form class="sign-up">
-<input type="text" placeholder="username"><br>
-<input type="password" placeholder="password"><br>
-<input type="password" placeholder="confirm password"><br>
-<div id="signup-button"><a href="journal.html">login</a></div>
-</form>
--->

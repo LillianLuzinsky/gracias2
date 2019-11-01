@@ -5,29 +5,22 @@
 
 <div class="row">
   <div class="login-section col-lg-12 col-sm-12">
+
+  <div class="sign-up">
     <%= form_tag sessions_path do %>
 
     <div class="field">
-      <%= label_tag :email %><br />
       <%= text_field_tag :email, params[:email] %>
     </div>
 
     <div class="field">
-      <%= label_tag :password %><br />
       <%= password_field_tag :password %>
     </div>
 
-    <div class="actions"><%= submit_tag "login" %></div>
+    <div class="actions"><%= submit_tag "login", :id => 'login-button' %></div>
     <% end %>
+  </div>
 </div>
-
-<!--
-<form class="sign-up">
-<input type="text" placeholder="username"><br>
-<input type="password" placeholder="password"><br>
-<div id="login-button"><a href="journal.html">login</a></div>
-</form>
--->
 
 
 

@@ -9,8 +9,7 @@
             <h4><%= question.title %></h4>
             <%= form_tag('/journal/'+question.id.to_s+'/answer', :class => 'journal' ) do %>
                 <input type="text" name="user_reply"><br>
-                <button class="journal-button">edit</button>
-                <button type="submit" class="journal-button">save</button>
+                <button type="submit" class="journal-button">submit</button>
             <% end %>
         </div>
     <% end %>

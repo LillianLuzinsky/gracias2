@@ -53,7 +53,7 @@ body, #container{
     background: linear-gradient(-45deg, #d8ff64, #f7f37e, #f9a66e);
 }
 
-#click-here{
+#click-here, .error_messages{
     text-align: center;
     margin-top: 20px;
     color: #555555;
@@ -241,7 +241,6 @@ padding: 20px;
 }
 
 .journal-button{
-    display: inline-block;
     width: 70px;
     margin-left: 50px;
     font-size: 20px;
