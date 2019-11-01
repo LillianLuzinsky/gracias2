@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get '/journal' => 'journal_entries#journal'
   get '/journal/history' => 'journal_entries#history'
 
+  # route for saving a question
+  post '/journal/:question_id/answer' => 'journal_entries#create'
+
   get '/signup', to: 'users#new', as: 'signup'
   get '/login', to: 'sessions#new', as: 'login'
   get '/logout', to: 'sessions#destroy', as: 'logout'

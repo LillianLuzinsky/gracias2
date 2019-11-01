@@ -6,7 +6,25 @@
     <p>to view your previous posts, <a href= '/journal/history' >click here</a></p>
 </div>
 
-<%= form_for :journal_entries, url: 'journal' do |f| %>
+<div class="row">
+
+    <% @questions.each_with_index do |question, index| %>
+        <div class="section<%=index+1%> col-lg-4 col-sm-12">
+            <h4><%= question.title %></h4>
+            <%= form_tag('/journal/'+question.id.to_s+'/answer', :class => 'journal' ) do %>
+                <input type="text" name="user_reply"><br>
+                <button class="journal-button">edit</button>
+                <button type="submit" class="journal-button">save</button>
+            <% end %>
+        </div>
+    <% end %>
+
+</div>
+
+
+
+<div class="row">
+   <%= form_for :journal_entries, url: 'journal' do |f| %>
 
 <p>
     <%= f.label 'for what were you grateful?'%><br>
@@ -30,3 +48,8 @@
 </p>
   
 <% end %>
+</div>
+
+
+
+

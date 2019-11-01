@@ -22,15 +22,14 @@ class JournalEntriesController < ApplicationController
 
     def create
 
-        @answer = Answer.new(journal_entries_params)
-
+        @answer = Answer.new
+        @answer.question_id = params[:question_id]
+        @answer.user_reply = params[:user_reply]
+        @answer.user_id = current_user.id
         @answer.save
-        redirect_to @answer
-    
+        redirect_to '/journal/history'
+
     end
 
-    private def journal_entries_params
-        params.require(:response).permit(:text)
-    end
     
 end
