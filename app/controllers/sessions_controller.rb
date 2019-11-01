@@ -3,10 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
+
+
     user = User.find_by_email(params[:email])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to '/journal', notice: "login!"
+      redirect_to '/journal/new', notice: "login!"
     else
       flash.now.alert = "sorry, wrong email or password"
       render "new"

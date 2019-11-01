@@ -1,16 +1,17 @@
 Rails.application.routes.draw do
   
   get 'sessions/new'
-  root 'pages#index'
+  root :to => 'pages#index'
 
-  get 'journal' => 'posts#new'
+  get '/journal' => 'journal_entries#journal'
+  get '/journal/new' => 'journal_entries#new'
 
-  get 'signup', to: 'users#new', as: 'signup'
-  get 'login', to: 'sessions#new', as: 'login'
-  get 'logout', to: 'sessions#destroy', as: 'logout'
+  get '/signup', to: 'users#new', as: 'signup'
+  get '/login', to: 'sessions#new', as: 'login'
+  get '/logout', to: 'sessions#destroy', as: 'logout'
 
   resources :users
   resources :sessions
-  resources :posts
+  resources :journal_entries
 
 end
