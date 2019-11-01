@@ -2,6 +2,33 @@
     <h1>journal</h1>
 </div>
 
-<p>Add questions from Question model here</p>
-<p>Add answer from Answer model here </p>
+<p>this is your where you enter your answers</p>
 
+<%= form_for :journal_entries, url: 'journal' do |f| %>
+
+<p>
+    <%= f.label 'for what were you grateful?'%><br>
+    <%= f.text_area :text %><br>
+    <%= f.submit 'add' %>
+    <%= f.submit 'save' %>
+</p><br>
+
+<p>
+    <%= f.label 'who made you feel grateful?'%><br>
+    <%= f.text_area :text %><br>
+    <%= f.submit 'add' %>
+    <%= f.submit 'save' %>
+</p><br>
+
+<p>
+    <%= f.label 'how did you show your appreciation?'%><br>
+    <%= f.text_area :text %><br>
+    <%= f.submit 'add' %>
+    <%= f.submit 'save' %>
+</p>
+  
+<% end %>
+
+<div id="click-here">
+    <p>to view your previous posts, <a href= '/journal/new' >click here</a></p>
+</div>

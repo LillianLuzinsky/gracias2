@@ -14,4 +14,12 @@ Rails.application.routes.draw do
   resources :sessions
   resources :journal_entries
 
+  # resources :books
+  # GET books => books#index
+  # GET books/:id => books#show
+  # GET books/new => books#new // for showing the new form
+  # GET books/:id/edit => books#edit // for showing the edit form
+  # POST books => books#create // for creating a new book instance
+  # DELETE books/:id books#destroy // for deleting a book by its id
+
 end

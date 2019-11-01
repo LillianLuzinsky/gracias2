@@ -1,8 +1,13 @@
 class JournalEntriesController < ApplicationController
 
-    def journal
-        @answer = Answer.all
-
+   def journal
+        if current_user  == nil
+            redirect_to '/signup'
+        else
+            @questions = Question.all
+            
+            
+        end
     end
 
     def show

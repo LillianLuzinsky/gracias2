@@ -11,6 +11,6 @@ User.create(email: 'hello@hello.com', password_digest: BCrypt::Password.create('
 User.create(email: 'bye@bye.com', password_digest: BCrypt::Password.create('1234'))
 
 
-Question.create(question_number: 'what were you grateful for?')
-Question.create(question_number: 'who made you feel grateful?')
-Question.create(question_number: 'how did you show your appreciation?')
+Question.create(title: 'what were you grateful for?')
+Question.create(title: 'who made you feel grateful?')
+Question.create(title: 'how did you show your appreciation?')

@@ -1,32 +1,3 @@
-<p>how do I get my question entries here?</p>
-
-<h1>Your journal entries</h1>
-
-<%= form_for :journal_entries, url: 'journal' do |f| %>
-
-<p>
-    <%= f.label 'for what were you grateful?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p><br>
-
-<p>
-    <%= f.label 'who made you feel grateful?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p><br>
-
-<p>
-    <%= f.label 'how did you show your appreciation?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p>
-  
-<% end %>
-
-<div id="click-here">
-    <p>to view your previous posts, <a href= '/journal' >click here</a></p>
+<div class="title">
+    <h1>history</h1>
 </div>
