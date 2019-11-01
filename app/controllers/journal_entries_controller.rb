@@ -32,5 +32,9 @@ class JournalEntriesController < ApplicationController
 
     end
 
+    def destroy
+        
+    end
+
     
 end
