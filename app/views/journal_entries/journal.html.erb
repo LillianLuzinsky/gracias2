@@ -2,10 +2,6 @@
     <h1>journal</h1>
 </div>
 
-<div id="click-here">
-    <p>to view your previous posts, <a href= '/journal/history' >click here</a></p>
-</div>
-
 <div class="row">
 
     <% @questions.each_with_index do |question, index| %>
@@ -20,36 +16,4 @@
     <% end %>
 
 </div>
-
-
-
-<div class="row">
-   <%= form_for :journal_entries, url: 'journal' do |f| %>
-
-<p>
-    <%= f.label 'for what were you grateful?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p><br>
-
-<p>
-    <%= f.label 'who made you feel grateful?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p><br>
-
-<p>
-    <%= f.label 'how did you show your appreciation?'%><br>
-    <%= f.text_area :text %><br>
-    <%= f.submit 'add' %>
-    <%= f.submit 'save' %>
-</p>
-  
-<% end %>
-</div>
-
-
-
 
