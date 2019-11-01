@@ -5,6 +5,13 @@
 <div class="row">
   <div class="history-section col-lg-12 col-sm-12">
     
+        <ul>
+            <% @answers.each do |answer| %>
+                <li><%= answer.question.title %>
+                <%= answer.inspect %></li>
+            <% end %>
+        </ul>
+
 
   </div>
 </div>

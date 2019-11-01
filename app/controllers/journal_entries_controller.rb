@@ -10,13 +10,14 @@ class JournalEntriesController < ApplicationController
         end
     end
 
-    def show
-
-        @answer = Answer.find(params[:id])
-    
-    end
 
     def history
+        if current_user  == nil
+            redirect_to '/login'
+        else
+            @answers = current_user.answers
+            # @answers = Answer.includes(:question).where(user_id: current_user.id)
+        end
 
     end
 
