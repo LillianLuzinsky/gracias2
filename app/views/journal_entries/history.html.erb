@@ -1,19 +1,27 @@
 <div class="title">
-    <h1>timeline</h1>
-</div>
+    <h1 id="welcome">timeline</h1>
+  </div>
 
 <div class="row">
   <div class="history-section col-lg-12 col-sm-12">
+
+<%= month_calendar do |date| %>
+  <%= date.day %>
+
     
-        <ul>
+       <!--
+       <ul>
             <% @answers.each do |answer| %>
                 <li>
                     <h3><%= answer.question.title %></h3><br>
                     <h3><%= answer.user_reply %></h3><br><br>
-                    <h3><%= answer.created_at.strftime("%d-%M-%Y") %></h3><br><br>
                 </li>
             <% end %>
         </ul>
+
+    
+       --> 
+       <% end %>
 
   </div>
 </div>

@@ -49,8 +49,8 @@ body, #container{
 }
 
 .history-section{
-    height: 50vh;
-    background: linear-gradient(-45deg, #d8ff64, #f7f37e, #f9a66e);
+    height: auto;
+    background: -webkit-linear-gradient(-225deg,  #a2ff64, #e2fe90, #f7f37e, #f9aa6e);
 }
 
 #click-here, .error_messages{
@@ -323,6 +323,12 @@ h4, .section3 h4{
 #button1 a, #button a:hover{
     margin-left: 30vw;
 }
+
+.sign-up{
+    position: relative;
+    top: 60%;
+}
  
 }
 
+*= require simple_calendar
