@@ -8,6 +8,10 @@
         <% @answers.each do |answer| %>
           <% if date === answer.created_at.to_date %>
           <%= answer.user_reply %>
+          <form> 
+          <input type="text" name="name" id="name" placeholder="Name">
+          <button> Edit </button>
+          <br>
       <% end %>
     <% end %>
   <% end %>

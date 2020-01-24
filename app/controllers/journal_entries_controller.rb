@@ -21,6 +21,24 @@ class JournalEntriesController < ApplicationController
 
     end
 
+    def show_entry
+
+        @answer = Answer.find_by :id => params[:entry_id]
+        redirect_to '/journal/history/:entry_id'
+
+    end
+
+    def edit_entry
+
+        @answer = Answer.find_by :id => params[:entry_id]
+        @answer.question_id = params[:question_id]
+        @answer.user_reply = params[:user_reply]
+        @answer.user_id = current_user.id
+        @answer.save
+        redirect_to '/journal/history'
+
+    end
+    
     def create
 
         @answer = Answer.new
