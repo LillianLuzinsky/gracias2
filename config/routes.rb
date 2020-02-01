@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   # route for saving a question
   post '/journal/:question_id/answer' => 'journal_entries#create'
 
+  #edit entry
+  post '/journal/history/edit/:entry_id' => 'journal_entries#edit_entry'
+  #delete entry
+  delete '/journal/history/delete/:entry_id' => 'journal_entries#destroy_entry'
+
+
   get '/signup', to: 'users#new', as: 'signup'
   get '/login', to: 'sessions#new', as: 'login'
   get '/logout', to: 'sessions#destroy', as: 'logout'
