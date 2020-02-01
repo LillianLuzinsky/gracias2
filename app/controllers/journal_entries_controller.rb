@@ -29,14 +29,18 @@ class JournalEntriesController < ApplicationController
     end
 
     def edit_entry
-
         @answer = Answer.find_by :id => params[:entry_id]
-        @answer.question_id = params[:question_id]
+        @answer.question_id = 1 #HARDCODED - CHANGE LATER
         @answer.user_reply = params[:user_reply]
         @answer.user_id = current_user.id
         @answer.save
         redirect_to '/journal/history'
+    end
 
+    def destroy_entry
+        @answer = Answer.find_by :id => params[:entry_id]
+        @answer.destroy
+        redirect_to '/journal/history'
     end
     
     def create
@@ -49,10 +53,4 @@ class JournalEntriesController < ApplicationController
         redirect_to '/journal/history'
 
     end
-
-    def destroy
-        
-    end
-
-    
 end
