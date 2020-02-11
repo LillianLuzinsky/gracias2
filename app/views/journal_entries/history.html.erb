@@ -8,20 +8,20 @@
         <% @answers.each do |answer| %>
           <% if date === answer.created_at.to_date %>
           <%= answer.user_reply %>
-
           <br>
-                      <%= form_with(url: "/journal/history/edit/#{answer.id}", method: "post") do %>
-                    <form>
-                        <input type="text" name="user_reply" id="user_reply" placeholder="user_reply" value="<%= answer.user_reply %>">
-                        <button type="submit">edit</button>
-                        <button type="button"> 
-                          <%= link_to 'delete', "/journal/history/delete/#{answer.id}", method: :delete, data: { confirm: 'Are you sure?' } %>
-                        </button>
-
-                    </form>
-                    <% end %>
+          <%= form_with(url: "/journal/history/edit/#{answer.id}", method: "post") do %>
+        <form>
+            <input type="text" name="user_reply" id="user_reply" placeholder="user_reply" value="<%= answer.user_reply %>">
+            <button type="submit">edit</button>
+            <button type="button"> 
+              <%= link_to 'delete', "/journal/history/delete/#{answer.id}", method: :delete, data: { confirm: 'Are you sure?' } %>
+            </button>
+        </form>
       <% end %>
+    <% end %>
     <% end %>
   <% end %>
   </div>
-</div>
+</div> 
+
+<script>

@@ -27,12 +27,12 @@ class JournalEntriesController < ApplicationController
         redirect_to '/journal/history/:entry_id'
 
     end
-
+ 
     def edit_entry
         @answer = Answer.find_by :id => params[:entry_id]
-        @answer.question_id = 1 #HARDCODED - CHANGE LATER
+        # @answer.question_id no need to update q id
         @answer.user_reply = params[:user_reply]
-        @answer.user_id = current_user.id
+        # @answer.user_id = current_user.id
         @answer.save
         redirect_to '/journal/history'
     end
