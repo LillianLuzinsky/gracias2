@@ -16,7 +16,7 @@ but also the people and to be more mindful in showing appreciation to such peopl
 
 ---
 
-## Features!
+## Features
   - Login/Sign Up page
   - Journal page, where you can submit your answers to each question of the app.
   - History page, where you can read, edit or delete your diary entries in a calendar format. 
