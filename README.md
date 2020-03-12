@@ -2,18 +2,19 @@
 
 I took the idea from hardcopy gratitude diaries.<br>
 The concept is pretty basic but can have a powerful positive effect.
-The simple habit of reflecting on what you’re grateful for can actually lead to a happier, more content life. <br>
-All it takes is a few moments of your time and a gratitude journal to record your thoughts.<br>
+The simple habit of reflecting on what you’re grateful for can actually lead to a happier, more content life.
+All it takes is a few moments of your time and a gratitude journal to record your thoughts.<br><br>
 This app, however, goes one step further.
 it also allows the person to think about not only events that made them happier,
 but also the people and to be more mindful in showing appreciation to such people.
-# Deployment
+
+## Deployment
   - Heroku: https://gracias3.herokuapp.com/
 
-# Features!
-- Expenses
-    - Create, edit, and categorize them.
-    - Sort by date, name them, and never forget where you ended up spending that spare change.
+## Features!
+  - Login or Sign Up
+  - Journal page, where you can submit your answers to each question of the app.
+  - History page, where you can read, edit or delete your diary entries in a calendar format. 
 
 - Categories
     - Categorize your expenses with custom our pre-defined categories.
@@ -31,14 +32,11 @@ but also the people and to be more mindful in showing appreciation to such peopl
 # Used technologies:
 
 Front-end:
-  - Developed using Ruby-on-Rails, Html, CSS, and Bootstrap.
+  - Developed using Ruby-on-Rails, HTML, CSS, and Bootstrap.
 
 Back-end:
   - Developed using Ruby-on-Rails controllers and models combined with PostgreSQL database.
   
-Deployment:
-  - This is is deplyed and maintained on Heroku. Please check it out!
-    - https://my-expenses-tracker-project.herokuapp.com/
 
 ### Tech
 
