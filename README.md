@@ -1,4 +1,5 @@
-# Gracias - A gratitude app
+# Gracias 
+## A gratitude app
 
 I took the idea from hardcopy gratitude diaries.<br>
 The concept is pretty basic but can have a powerful positive effect.
