@@ -24,12 +24,15 @@ but also the people and to be more mindful in showing appreciation to such peopl
 
 # Used technologies:
 
-Front-end:
-  - Developed using Ruby-on-Rails, HTML, CSS, and Bootstrap.
+### Front-end:
+1) Ruby-on-Rails
+2) HTML
+3) CSS
+4) Bootstrap
 
-Back-end:
-  - Dev
-
+### Back-end:
+1) Ruby-on-Rails controllers and models
+2) PostgreSQL database.
 ---
 
 ### Screenshots
