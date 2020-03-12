@@ -1,8 +1,14 @@
-# Expenses Tracker App
+# Gracias - A gratitude app
 
-A clear desingned, functional and simple to use daily expenses tracker.
-    -- Github page: https://github.com/phfa26/ExpensesTrackerApp
-    -- Heroku deployment: https://my-expenses-tracker-project.herokuapp.com/
+I took the idea from hardcopy gratitude diaries.<br>
+The concept is pretty basic but can have a powerful positive effect.
+The simple habit of reflecting on what you’re grateful for can actually lead to a happier, more content life. <br>
+All it takes is a few moments of your time and a gratitude journal to record your thoughts.<br>
+This app, however, goes one step further.
+it also allows the person to think about not only events that made them happier,
+but also the people and to be more mindful in showing appreciation to such people.
+# Deployment
+  - Heroku: https://gracias3.herokuapp.com/
 
 # Features!
 - Expenses
