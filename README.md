@@ -5,9 +5,8 @@ I took the idea from hardcopy gratitude diaries.<br>
 The concept is pretty basic but can have a powerful positive effect.
 The simple habit of reflecting on what you’re grateful for can actually lead to a happier, more content life.
 All it takes is a few moments of your time and a gratitude journal to record your thoughts.<br><br>
-This app, however, goes one step further.
-it also allows the person to think about not only events that made them happier,
-but also the people and to be more mindful in showing appreciation to such people.
+This app also has the added feature of writing down names of people who've had a positive effect on you,
+and how you can show your appreciation towards them.
 
 ---
 
@@ -23,7 +22,7 @@ but also the people and to be more mindful in showing appreciation to such peopl
 
 ---
 
-# Used technologies:
+## Used technologies:
 
 ### Front-end:
 1) Ruby-on-Rails
