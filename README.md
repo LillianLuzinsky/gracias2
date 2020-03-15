@@ -17,8 +17,8 @@ and how you can show your appreciation towards them.
 
 ## Features
   - Login/Sign Up page
-  - Journal page, where you can submit your answers to each question of the app.
-  - History page, where you can read, edit or delete your diary entries in a calendar format. 
+  - Journal page, where you submit your answers to each question provided.
+  - History page, where you read, edit or delete your diary entries in a calendar format. 
 
 ---
 
